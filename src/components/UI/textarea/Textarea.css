@@ -1,0 +1,26 @@
+.textarea-box{}
+.textarea-box > label{
+	display: block;
+	font-family: 'Poppins', sans-serif;
+	font-size: 0.85rem;
+	font-weight: bold;
+	color: #ffdd00;
+	margin-bottom:0.2rem;
+}
+.textarea-box > textarea{
+	border: 1px solid #ced4da;
+	padding: 0.2rem;
+	font-size: 0.85rem;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-indent: 0.5rem;
+	border-radius: 5px;
+	color: #495057;
+	width: 100%;	
+	margin-bottom: 0.5rem;
+}
+.textarea-box > textarea:focus{
+	outline: 5px solid #f8f9fa;
+}
+.textarea-box > textarea::placeholder{
+	color:#ced4da;
+}

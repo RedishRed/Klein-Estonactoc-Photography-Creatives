@@ -1,0 +1,13 @@
+
+
+.modal-title{
+	font-family: 'Poppins', sans-serif;
+	font-size: 1rem;
+	font-weight: bold;
+	color: #ffdd00;
+}
+.modal-body{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 0.85rem;
+	text-align: justify;
+}

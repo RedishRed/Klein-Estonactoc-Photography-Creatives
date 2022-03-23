@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600&family=Source+Sans+Pro:wght@200;300;400&display=swap');
+.landingPage-wrapper{
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+	background-image: url('../assets/landingpage.jpg');
+	background-position: center;
+	background-size: cover;
+}
+.landingPage-wrapper > .backdrop{
+	background-color: #343a40;
+	width: 100%;
+	height: 100vh;
+	opacity: 0.4;
+}
+.landingPage-wrapper > div:last-child{
+	position: absolute;
+	top: 25%;
+	left: 10%;
+	max-width: 450px;
+}
+.landingPage-wrapper > div > p{
+	font-family: 'Poppins', sans-serif;
+	margin-bottom: 0;
+}
+.landingPage-wrapper > div:last-child > .heading{
+	font-size: 2rem;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.landingPage-wrapper > div:last-child > .heading > span{
+	color: #ffdd00;
+}
+.landingPage-wrapper > div:last-child > .sub-heading{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	color: #edf2f4;
+	font-size: 0.9rem;
+	text-align: justify;
+	max-width: 400px;
+	margin-left: 1rem;
+	padding: 1rem 0 2rem 0;
+}
+.btn-book-now{
+	text-decoration: none;
+	background: #ffdd00;
+	padding: 0.5rem 1rem;
+	color: #FFFFFF;
+	font-family: 'Poppins', sans-serif;
+	border-radius: 5px;
+	font-size: 0.75rem;
+	outline: none;
+	transition: 0.3s ease-in-out;
+	border: 1px solid #ffdd00;
+}
+.btn-book-now:hover{
+	border: 1px solid #ffd000;
+	background: #ffd000;
+	color: #FFFFFF;
+}
+.btn-signup{
+	border: 1px solid #ffdd00;
+	padding: 0.5rem 1rem;
+	color: #ffdd00;
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+	border-radius: 5px;
+	margin-left: 1rem;
+	font-size: 0.75rem;
+	outline: none;
+	transition: 0.3s ease-in-out;
+}
+.btn-signup:hover{
+	background: #ffdd00;
+	color: #FFFFFF;
+}
+@media only screen and (max-width: 425px){
+	.landingPage-wrapper > div:last-child{
+		left: 0;
+		text-align:center;
+		margin:1rem;	
+	}
+	.landingPage-wrapper > div:last-child > .heading{
+		font-size: 1.5rem;
+	}
+}

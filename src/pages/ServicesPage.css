@@ -1,0 +1,181 @@
+.services-wrapper{
+	position:relative;
+	background:#f8f9fa;
+	margin-top: 1rem;
+	padding: 3rem 1rem;
+}
+.services-wrapper > p:first-child{
+	font-size: 4rem;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	margin-bottom: 0;
+	color: #343a40;
+	line-height: 60px;
+	text-align: right;
+}
+.services-wrapper > p:first-child > span{
+	display: block;
+}
+.services-wrapper > p:nth-child(2){
+	margin-bottom: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #495057;
+	font-size: 0.85rem;
+	text-align: right;
+}
+.package-box > .tag{
+	color: #f8f9fa;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	font-size: 8rem;
+	position: absolute;
+	top: -30px;
+	left: 10px;
+	z-index: 1;
+	animation: packageUnHovered 0.5s ease-in-out;
+}
+.services-wrapper .row-services{
+	padding: 0rem 0 1rem 0;
+	position: relative;
+	z-index:1;
+	overflow: hidden;
+}
+.services-wrapper .package-box{
+	background: #FFFFFF;
+	padding: 1rem;
+	border-radius: 5px;
+	position: relative;
+	min-height: 450px;
+	transition: 0.5s ease-in-out;
+}
+.services-wrapper .package-box:hover{
+	box-shadow: 0 0 5px #c4c4c4;
+}
+.services-wrapper .package-box:hover .package-header{
+	animation: packageHeaderHovered 0.5s ease-in-out forwards;
+}
+.services-wrapper .package-box:hover .tag{
+	animation: packageHovered 0.5s ease-in-out forwards;
+}
+.services-wrapper .package-header{
+	position: relative;
+	z-index: 2;
+	left: 50px;
+	top: 20px;
+	animation: packageHeaderUnHovered 0.5s ease-in-out;
+}
+.services-wrapper .package-header > p:first-child{
+	font-family: 'Poppins', sans-serif;
+	color: #343a40;
+	font-size: 2rem;
+	margin-bottom: 0;
+	font-weight: bold;
+	line-height: 30px;
+}
+.services-wrapper .package-header > p:last-child{
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	color: #ffdd00;
+}
+
+.services-wrapper .package-box > ul > li{
+	font-size: 0.85rem;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.services-wrapper .package-box > ul{
+	margin-top:  4rem;
+}
+.services-wrapper .btn-book{
+	background: #ffdd00;
+	text-decoration: none;
+	color: #ffffff;
+	padding: 0.25rem 0.5rem;
+	font-size: 0.75rem;
+	font-family: 'Poppins', sans-serif;
+	border-radius: 5px;
+	width: max-content;
+	border: 1px solid #ffdd00;
+	transition: 0.3s ease-in-out;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.services-wrapper .btn-book:hover{
+	background: #ffd000;
+	border: 1px solid #ffd000;
+}
+
+@keyframes packageHeaderUnHovered{
+	0%{
+		left: 0px;
+	}
+	100%{
+		left: 50px;
+	}
+}
+.services-wrapper .col{
+	padding-top: 1.5rem;
+}
+@keyframes packageHeaderHovered{
+	0%{
+		left: 50px;
+	}
+	100%{
+		left: 0px;
+	}
+}
+@keyframes packageUnHovered{
+	0%{
+		left: 260px;
+	}
+	100%{
+		left: 10px;
+	}	
+}
+@keyframes packageHovered{
+	0%{
+		left: 10px;
+	}
+	100%{
+		left: 260px;
+	}
+}
+@media only screen and (min-width: 425px) and (max-width: 768px){
+	@keyframes packageUnHovered{
+		0%{
+			left: 175px;
+		}
+		100%{
+			left: 10px;
+		}	
+	}
+	@keyframes packageHovered{
+		0%{
+			left: 10px;
+		}
+		100%{
+			left: 175px;
+		}
+	}	
+}
+@media only screen and (max-width: 425px){
+	@keyframes packageUnHovered{
+		0%{
+			left: 230px;
+		}
+		100%{
+			left: 10px;
+		}	
+	}
+	@keyframes packageHovered{
+		0%{
+			left: 10px;
+		}
+		100%{
+			left: 230px;
+		}
+	}	
+}

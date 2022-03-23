@@ -1,0 +1,87 @@
+
+.footer-wrapper{
+	background: #212529;
+	border: 1px solid #212529;
+	position: relative;
+	outline: 5px solid #212529;
+	color: #ffffff;
+	padding: 1rem;
+}
+
+.footer-wrapper .company{
+	font-family: 'Poppins', sans-serif;
+	display: block;
+	color: #fff;
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.company-details > p:nth-child(2){
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: justify;
+	font-size: 0.85rem;
+	color: #6c757d;
+	max-width: 300px;
+}
+.company-details > p:nth-child(3){
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 0.85rem;
+	margin-bottom: 0;
+	color: #6c757d;
+}
+.company-details > p:nth-child(4){
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 0.85rem;
+	color: #6c757d;
+}
+.explore-details > p, .social-media-details > p{
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.explore-details > ul, .social-media-details > ul{
+	list-style: none;
+	padding: 0;
+}
+.explore-details > ul > li > a, .social-media-details > ul > li > a, .footer-link{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 0.85rem;
+	color: #6c757d;
+	padding: 0;
+	width: max-content;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+}
+.explore-details > ul > li > a:hover, .social-media-details > ul > li > a:hover, .footer-link:hover{
+	color: #ffdd00;
+}
+.footer-wrapper .copyright{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 0.85rem;
+	color: #f8f9fa;
+	text-align: center;	
+}
+.footer-wrapper a{
+	text-decoration: none;
+}
+.custom-shape-divider-bottom-1647840176 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+.custom-shape-divider-bottom-1647840176 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+.custom-shape-divider-bottom-1647840176 .shape-fill {
+    fill: #212529;
+}

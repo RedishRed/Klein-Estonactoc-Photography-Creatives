@@ -1,0 +1,71 @@
+
+.contact-wrapper{
+	height: 50vh;
+	padding: 2rem;
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.contact-wrapper .header-box{
+}
+.contact-wrapper .header{
+	font-family: 'Poppins', sans-serif;
+	font-size: 4rem;
+	font-weight: bold;
+	margin-bottom: 0;
+	line-height: 60px;
+	color: #343a40;
+}
+.contact-wrapper .sub-header{
+	font-family: 'Source Sans Pro', sans-serif;
+	padding-top: 0.5rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0;
+	font-size: 0.85rem;
+	color: #495057;
+}
+.contact-wrapper > .header-box > p:last-child{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 0.85rem;
+	text-align: justify;
+	max-width: 500px;
+	color: #495057;
+}
+.contact-wrapper .form-contact{
+	padding: 2rem;
+}
+.contact-wrapper .input-field{
+	display: flex;
+	flex-direction: column;
+}
+.contact-wrapper .btn-send{
+	font-family: 'Poppins', sans-serif;
+	font-size:  0.75rem;
+	background: #ffdd00;
+	color: #ffffff;
+	border: 1px solid #ffdd00;
+	border-radius: 5px;
+	padding: 0.25rem 0.5rem;
+	float: right;
+	transition: 0.3s ease-in-out;
+}
+.contact-wrapper .btn-send:hover{
+	background: #ffd000;
+	border: 1px solid #ffd000;
+}
+
+@media only screen and (min-width: 425px) and (max-width: 768px){
+	.contact-wrapper .form-contact{
+		padding: 2rem 0 1rem 1rem;
+	}
+}
+
+@media only screen and (max-width: 425px){
+	.contact-wrapper{
+		height: 100%;
+		grid-template-columns: 1fr;
+	}
+	.contact-wrapper .form-contact{
+		padding: 0;
+	}
+}

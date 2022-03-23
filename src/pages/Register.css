@@ -1,0 +1,99 @@
+.register-wrapper{
+	padding: 5rem 1rem 0 1rem;
+}
+.register-wrapper .header{
+	font-family: 'Poppins', sans-serif;
+	font-size: 4rem;
+	font-weight: bold;
+	margin-bottom: 0;
+	line-height: 60px;
+	color: #343a40;
+}
+.register-wrapper .sub-header{
+	font-family: 'Source Sans Pro', sans-serif;
+	padding-top: 0.5rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0;
+	font-size: 0.85rem;
+	color: #495057;
+	text-align: justify;	
+	max-width: 600px;
+}
+.register-wrapper .banner-img-box{
+	height: 50%;
+	margin: 1rem 0 0 0;
+}
+.register-wrapper .banner-img-box > .signup-img{
+	width: 100%;
+}
+.register-wrapper .general-details-box, .email-details-wrapper{
+	border-radius: 5px;
+	margin-bottom: 1rem;
+}
+.register-wrapper .form-register{
+	padding: 2rem;
+}
+.register-wrapper .terms-agreement-box{
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+}
+.register-wrapper .terms-agreement-box > p{
+	color: #495057;
+	margin-bottom: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 0.75rem;
+}
+.register-wrapper .btn-signup{
+	font-family: 'Poppins', sans-serif;
+	font-size:  0.75rem;
+	background: #ffdd00;
+	color: #ffffff;
+	border: 1px solid #ffdd00;
+	border-radius: 5px;
+	padding: 0.5rem 2rem;
+	transition: 0.3s ease-in-out;
+	margin: 0.5rem auto;
+	display: block;
+}
+.register-wrapper .btn-signup:hover{
+	background: #ffd000;
+	border: 1px solid #ffd000;	
+}
+.recaptcha-box{
+	margin: 0.5rem 0;
+}
+.register-wrapper .disabled{
+	border: 1px solid #ced4da;
+	background: #ced4da;
+	font-family: 'Poppins', sans-serif;
+	font-size:  0.75rem;
+	color: #ffffff;
+	border-radius: 5px;
+	padding: 0.5rem 2rem;
+	transition: 0.3s ease-in-out;
+	margin: 2rem auto 1rem auto;
+	display: block;
+}
+.btn-terms{
+	background: transparent;
+	border: none;
+	color: #0D85FE;
+	text-decoration: underline;
+}
+.footer-signup{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 0.85rem;
+	text-align: center;
+	margin-top: 2rem;	
+}
+
+@media only screen and (max-width: 425px){
+	.register-wrapper .form-register{
+		padding: 0 1rem;
+	}	
+	.register-wrapper .btn-signup, .register-wrapper .disabled{
+		width: 100%;
+	}
+
+}
