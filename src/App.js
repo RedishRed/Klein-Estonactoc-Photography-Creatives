@@ -18,6 +18,7 @@ function App() {
     <Router>
       <Header/>
       <Routes>
+      
         {/* Routes... */}
         <Route path='/' element={<Homepage/>} />
         <Route path='/shop' element={<Store/>} />
