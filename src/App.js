@@ -16,13 +16,15 @@ import CollectionPage from './pages/CollectionPage';
 
 /* Admin dashboard */
 import AdminDashboard from './pages/AdminDashboard/AdminDashboard';
+import AllPages from './pages/AllPages';
 
 function App() {
   return <Fragment>
     <Router>
       <Routes>
         {/* Routes... */}
-        <Route path='/' element={<Homepage/>} />
+        <Route path='/' element={<AllPages/>} />
+        <Route path='/homepage' element={<Homepage/>} />
         <Route path='/shop' element={<Store/>} />
         <Route path='/register' element={<Register/>} />
         <Route path='/login' element={<Login/>} />
