@@ -23,8 +23,8 @@ function App() {
     <Router>
       <Routes>
         {/* Routes... */}
-        <Route path='/' element={<AllPages/>} />
-        <Route path='/homepage' element={<Homepage/>} />
+        <Route path='/all_pages' element={<AllPages/>} />
+        <Route path='/' element={<Homepage/>} />
         <Route path='/shop' element={<Store/>} />
         <Route path='/register' element={<Register/>} />
         <Route path='/login' element={<Login/>} />

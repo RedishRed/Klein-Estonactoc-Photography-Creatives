@@ -4,8 +4,14 @@ import { Link } from 'react-router-dom';
 
 export default function AllPages() {
   return (
-    <ul>
-        <li><Link to="/admin">Admin</Link></li>
-    </ul>
+    <div>
+        <h1>All Pages</h1>
+        <ul>
+            <li><Link to="/admin">Admin</Link></li>
+            <li><Link to="/">Homepage</Link></li>
+            <li><Link to="/shop">Shop</Link></li>
+        </ul>
+    </div>
+    
   )
 }
