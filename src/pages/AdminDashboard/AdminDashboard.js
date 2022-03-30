@@ -1,4 +1,3 @@
-import { fa } from 'faker/lib/locales';
 import React from 'react';
 import Header from '../Partials/Header';
 import "../stylesheets/global.scss";
