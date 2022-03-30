@@ -12,20 +12,23 @@ import Homepage from './pages/Homepage';
 import Header from './components/Layout/Header';
 import Register from './pages/Register';
 import Login from './pages/Login';
+import CollectionPage from './pages/CollectionPage';
+
+/* Admin dashboard */
+import AdminDashboard from './pages/AdminDashboard/AdminDashboard';
 
 function App() {
   return <Fragment>
     <Router>
-      <Header/>
       <Routes>
-      
         {/* Routes... */}
         <Route path='/' element={<Homepage/>} />
         <Route path='/shop' element={<Store/>} />
         <Route path='/register' element={<Register/>} />
         <Route path='/login' element={<Login/>} />
+        <Route path='/collection_page' element={<CollectionPage/>} />
+        <Route path='/admin' element={<AdminDashboard/>} />
       </Routes>
-    <Footer/>
     </Router>
   </Fragment>
 };

@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.show>.btn-primary.dropdown-toggle{
+    color: unset !important;
+}
+
+body{
+    background-color: #EFF2F7 !important;
+}
+
+header {
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.5);
+    display: flex;
+    height: 72px;
+    justify-content: space-between;
+    padding: 13px 26px;
+    position: sticky;
+    z-index: 2;
+    a{
+        span{
+            color: #000 !important;
+        }
+    }
+    .profile_dropdown{
+        color: #000;
+        background: transparent !important;
+        border: none;
+        &:hover{
+            color: #000;   
+        }
+        img{
+            border-radius: 50%;
+            height: 32px;
+            width: 32px;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+    }
+}
+
+aside{
+    background-color: #212529;
+    display: inline-block;
+    height: 100%;
+    padding-top: 72px;
+    padding: 28px 5px 26px 26px;
+    position: fixed;
+    vertical-align: top;
+    width: 187px;
+    z-index: 3;
+
+    ul{
+        list-style: none;
+        li{
+            margin-bottom: 23px;
+            &.active{
+                a{
+                    color: #ffdd00;
+                }
+            }
+            a{
+                color: #fff;
+                display: block;
+                font: 16px/16px tahoma, verdana, arial, sans-serif;
+                text-decoration: none;
+                width: 100%;
+                &:hover{
+                    color: #ffdd00;
+                }
+            }
+        }
+    }
+}
+
+#content_section{
+    background-color: #EFF2F7;
+    display: block;
+    padding: 28px 26px 26px 213px;
+    position: relative;
+    width: 100%;
+    .section_wrapper{
+        background-color: #fff;
+        border-radius: 10px;
+        border: 1px solid #CDD5E6;
+        padding: 24px;
+        width: 100%;
+        h1{
+            border-bottom: 1px solid #CDD5E6;
+            color: #25324B;
+            font: 32px/37px tahoma, verdana, arial, sans-serif;
+            padding-bottom: 16px;
+        }
+        h2{
+            border-bottom: unset;
+            color: #25324B;
+            font: 20px/24px Inter-Bold, tahoma, verdana, arial, sans-serif;
+            margin-bottom: 18px;
+            padding-bottom: 0;
+        }
+
+        .customer_event_table{
+            overflow: hidden;
+            .cancelled_event{
+                background: rgba(245,0,0,0.5);
+                border: 1px solid #890F0D;
+            }
+            tbody{
+                tr{
+                    td{
+                        a{
+                            color: #ffdd00;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
