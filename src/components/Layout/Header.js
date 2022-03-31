@@ -27,7 +27,7 @@ export default function Header(){
 		:'header-wrapper'; 
 
 	return <Navbar expand="lg" className={navClass}>
-	       <Navbar.Brand href="#home" className='brand-name'>Klein Estonactoc<span>Photography | Creatives</span></Navbar.Brand>
+	       <Navbar.Brand href="/" className='brand-name'>Klein Estonactoc<span>Photography | Creatives</span></Navbar.Brand>
 		    <Navbar.Toggle aria-controls="basic-navbar-nav" />
 		    <Navbar.Collapse id="basic-navbar-nav">
 		      <Nav className="ms-auto">
