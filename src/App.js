@@ -7,9 +7,7 @@ import {
 } from 'react-router-dom';
 
 import Store from './pages/Store';
-import Footer from './components/Layout/Footer';
 import Homepage from './pages/Homepage';
-import Header from './components/Layout/Header';
 import Register from './pages/Register';
 import Login from './pages/Login';
 import CollectionPage from './pages/CollectionPage';
@@ -17,6 +15,8 @@ import CollectionPage from './pages/CollectionPage';
 /* Admin dashboard */
 import AdminDashboard from './pages/AdminDashboard/AdminDashboard';
 import AllPages from './pages/AllPages';
+import Events from './pages/Events/Events';
+import Customers from './pages/Customers/Customers';
 
 function App() {
   return <Fragment>
@@ -30,6 +30,8 @@ function App() {
         <Route path='/login' element={<Login/>} />
         <Route path='/collection_page' element={<CollectionPage/>} />
         <Route path='/admin' element={<AdminDashboard/>} />
+        <Route path='/events' element={<Events/>} />
+        <Route path='/customers' element={<Customers/>} />
       </Routes>
     </Router>
   </Fragment>

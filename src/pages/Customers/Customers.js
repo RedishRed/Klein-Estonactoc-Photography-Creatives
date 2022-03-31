@@ -50,8 +50,7 @@ let customers = [
         event_status: true,
     },
 ];
-
-export default function AdminDashboard() {
+export default function Customers() {
     let customer_row = customers.map((customer) => {
         return(
             <tr className={`${!customer.event_status ? "cancelled_event" : ""}`} >
@@ -75,7 +74,7 @@ export default function AdminDashboard() {
         <Sidebar />
         <div id="content_section">
             <div className="section_wrapper">
-                <h1>Welcome, Admin</h1>
+                <h1>Customers</h1>
                 <div class="content_container candidate_table_container">
                     <h2>Customers</h2>
                     <div class="table_container">
